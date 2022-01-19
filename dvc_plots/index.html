@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+</head>
+<body>
+    
+    <div id = "plot_cm_csv">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 0
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 1
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 2
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 3
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 4
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 5
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 6
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 7
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 8
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 9
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 10
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 11
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 12
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 13
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 14
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 15
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 16
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 17
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 18
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 19
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 20
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 21
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 22
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 23
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 24
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 25
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 26
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 27
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 28
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 29
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 30
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 31
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 32
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 33
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 34
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 35
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 36
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 37
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 38
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 39
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 40
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 41
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 42
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 43
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 44
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 45
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 46
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 47
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 48
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 49
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 50
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 51
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 52
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 53
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 54
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 55
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 56
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 57
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 58
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 59
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 60
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 61
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 62
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 63
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 64
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 65
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 66
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 67
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 68
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 69
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 70
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 71
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 72
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 73
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 74
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 75
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 76
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 77
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 78
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 79
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 80
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 81
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 82
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 83
+    },
+    {
+        "Predicted": "1",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 84
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 85
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 86
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 87
+    },
+    {
+        "Predicted": "0",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 88
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 89
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 90
+    },
+    {
+        "Predicted": "0",
+        "chd": "0",
+        "rev": "workspace",
+        "step": 91
+    },
+    {
+        "Predicted": "1",
+        "chd": "1",
+        "rev": "workspace",
+        "step": 92
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "layer": [
+        {
+            "encoding": {
+                "x": {
+                    "field": "step",
+                    "type": "quantitative",
+                    "title": "step"
+                },
+                "y": {
+                    "field": "Predicted",
+                    "type": "quantitative",
+                    "title": "Predicted",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "layer": [
+                {
+                    "mark": "line"
+                },
+                {
+                    "selection": {
+                        "label": {
+                            "type": "single",
+                            "nearest": true,
+                            "on": "mouseover",
+                            "encodings": [
+                                "x"
+                            ],
+                            "empty": "none",
+                            "clear": "mouseout"
+                        }
+                    },
+                    "mark": "point",
+                    "encoding": {
+                        "opacity": {
+                            "condition": {
+                                "selection": "label",
+                                "value": 1
+                            },
+                            "value": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "filter": {
+                        "selection": "label"
+                    }
+                }
+            ],
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "gray"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "step",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "encoding": {
+                        "text": {
+                            "type": "quantitative",
+                            "field": "Predicted"
+                        },
+                        "x": {
+                            "field": "step",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "Predicted",
+                            "type": "quantitative"
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 5,
+                                "dy": -5
+                            },
+                            "encoding": {
+                                "color": {
+                                    "type": "nominal",
+                                    "field": "rev"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+;
+            vegaEmbed('#plot_cm_csv', spec);
+        </script>
+    </div>
+    
+
+    <div id = "plot_report_prc_json">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "precision": 0.3548387096774194,
+        "recall": 1.0,
+        "rev": "workspace",
+        "threshold": 0
+    },
+    {
+        "precision": 0.6296296296296297,
+        "recall": 0.5151515151515151,
+        "rev": "workspace",
+        "threshold": 1
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "layer": [
+        {
+            "encoding": {
+                "x": {
+                    "field": "recall",
+                    "type": "quantitative",
+                    "title": "recall"
+                },
+                "y": {
+                    "field": "precision",
+                    "type": "quantitative",
+                    "title": "precision",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "layer": [
+                {
+                    "mark": "line"
+                },
+                {
+                    "selection": {
+                        "label": {
+                            "type": "single",
+                            "nearest": true,
+                            "on": "mouseover",
+                            "encodings": [
+                                "x"
+                            ],
+                            "empty": "none",
+                            "clear": "mouseout"
+                        }
+                    },
+                    "mark": "point",
+                    "encoding": {
+                        "opacity": {
+                            "condition": {
+                                "selection": "label",
+                                "value": 1
+                            },
+                            "value": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "filter": {
+                        "selection": "label"
+                    }
+                }
+            ],
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "gray"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "recall",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "encoding": {
+                        "text": {
+                            "type": "quantitative",
+                            "field": "precision"
+                        },
+                        "x": {
+                            "field": "recall",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "precision",
+                            "type": "quantitative"
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 5,
+                                "dy": -5
+                            },
+                            "encoding": {
+                                "color": {
+                                    "type": "nominal",
+                                    "field": "rev"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+;
+            vegaEmbed('#plot_report_prc_json', spec);
+        </script>
+    </div>
+    
+
+    <div id = "plot_report_roc_json">
+        <script type = "text/javascript">
+            var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "fpr": 0.0,
+        "rev": "workspace",
+        "threshold": 2,
+        "tpr": 0.0
+    },
+    {
+        "fpr": 0.16666666666666666,
+        "rev": "workspace",
+        "threshold": 1,
+        "tpr": 0.5151515151515151
+    },
+    {
+        "fpr": 1.0,
+        "rev": "workspace",
+        "threshold": 0,
+        "tpr": 1.0
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "layer": [
+        {
+            "encoding": {
+                "x": {
+                    "field": "fpr",
+                    "type": "quantitative",
+                    "title": "fpr"
+                },
+                "y": {
+                    "field": "tpr",
+                    "type": "quantitative",
+                    "title": "tpr",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+                "color": {
+                    "field": "rev",
+                    "type": "nominal"
+                }
+            },
+            "layer": [
+                {
+                    "mark": "line"
+                },
+                {
+                    "selection": {
+                        "label": {
+                            "type": "single",
+                            "nearest": true,
+                            "on": "mouseover",
+                            "encodings": [
+                                "x"
+                            ],
+                            "empty": "none",
+                            "clear": "mouseout"
+                        }
+                    },
+                    "mark": "point",
+                    "encoding": {
+                        "opacity": {
+                            "condition": {
+                                "selection": "label",
+                                "value": 1
+                            },
+                            "value": 0
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "transform": [
+                {
+                    "filter": {
+                        "selection": "label"
+                    }
+                }
+            ],
+            "layer": [
+                {
+                    "mark": {
+                        "type": "rule",
+                        "color": "gray"
+                    },
+                    "encoding": {
+                        "x": {
+                            "field": "fpr",
+                            "type": "quantitative"
+                        }
+                    }
+                },
+                {
+                    "encoding": {
+                        "text": {
+                            "type": "quantitative",
+                            "field": "tpr"
+                        },
+                        "x": {
+                            "field": "fpr",
+                            "type": "quantitative"
+                        },
+                        "y": {
+                            "field": "tpr",
+                            "type": "quantitative"
+                        }
+                    },
+                    "layer": [
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 5,
+                                "dy": -5
+                            },
+                            "encoding": {
+                                "color": {
+                                    "type": "nominal",
+                                    "field": "rev"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+;
+            vegaEmbed('#plot_report_roc_json', spec);
+        </script>
+    </div>
+    
+</body>
+</html>

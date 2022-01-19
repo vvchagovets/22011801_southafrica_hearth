@@ -1,9 +1,9 @@
 
-  
 import os
 import math
 import warnings
 import sys
+sys.path.insert(1, '/src')
 import pandas as pd
 import numpy as np
 import sklearn.metrics as metrics
@@ -18,9 +18,10 @@ import matplotlib.pyplot as plt
 import argparse
 import joblib
 import json
-import dvclive
+from dvclive import Live
 
 def train_and_evaluate(config_path):
+    live = Live()
     config = read_params(config_path)
     test_data_path = config["split_data"]["test_path"]
     train_data_path = config["split_data"]["train_path"]
@@ -33,11 +34,11 @@ def train_and_evaluate(config_path):
     train = pd.read_csv(train_data_path, sep=",")
     train_size = train.shape[0]
     print("Train Size", train_size)
-    dvclive.log("Train", train_size)
+    live.log("Train", train_size)
     test = pd.read_csv(test_data_path, sep=",")
     test_size = test.shape[0]
     print("Test Size", test_size)
-    dvclive.log("Test", test_size)
+    live.log("Test", test_size)
 
     
     train_y = train[target]
@@ -52,11 +53,11 @@ def train_and_evaluate(config_path):
     
     # Report training set score
     train_score = model.score(train_x, train_y) * 100
-    dvclive.log("Train Score", train_score)
+    live.log("Train Score", train_score)
     print(train_score)
     # Report test set score
     test_score = model.score(test_x, test_y) * 100
-    dvclive.log("Test Score",test_score)
+    live.log("Test Score",test_score)
     print(test_score)
 
     predicted_val = model.predict(test_x)
@@ -119,11 +120,11 @@ def train_and_evaluate(config_path):
 
 
     roc_auc = roc_auc_score(test_y, model.predict_proba(test_x)[:, 1])
-    dvclive.log("roc_auc", roc_auc)
+    live.log("roc_auc", roc_auc)
     print('ROC_AUC:{0:0.2f}'.format(roc_auc))
 
     Logistic_Accuracy = accuracy_score(test_y, predicted_val)
-    dvclive.log("Accuracy",Logistic_Accuracy)
+    live.log("Accuracy",Logistic_Accuracy)
     print('Logistic Regression Model Accuracy:{0:0.2f}'.format(Logistic_Accuracy))
 
     # Average precision score

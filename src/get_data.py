@@ -5,7 +5,7 @@ import os
 import yaml
 import pandas as pd
 import argparse
-import dvclive
+from dvclive import Live
 
 def read_params(config_path):
     with open(config_path) as yaml_file:
@@ -18,11 +18,14 @@ def get_data(config_path):
     df = pd.read_csv(data_path, sep=",", encoding='utf-8')
     df = pd.get_dummies(df, columns = ['famhist'], drop_first=True)
     df.drop("sbp",axis=1, inplace=True)
-    print("Dataset Size: ", df.shape[0])
-    print("******************check for version control**********************")
-    print(df.count)
-    print("******************check for version control*****************************************")
-    dvclive.log("# Records",df.shape[0])
+# =============================================================================
+#     print("Dataset Size: ", df.shape[0])
+#     print("******************check for version control**********************")
+#     print(df.count)
+#     print("******************check for version control*****************************************")
+# #    Live.log("# Records",df.shape[0])
+#     Live.log("# Records", df.shape[0])
+# =============================================================================
     return df
 
 ###
