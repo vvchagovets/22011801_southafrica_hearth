@@ -7,8 +7,8 @@ stages:
       md5: 1ab9718842e31841aef9bbb52fa8cb9c
       size: 21018
     - path: src/get_data.py
-      md5: 78059626d684369a0c40c303483d54e9
-      size: 1263
+      md5: 535fac8b943e7d405e3746946c84249d
+      size: 1296
     - path: src/load_data.py
       md5: d21cb9b3fbdf7ad1ead3837c7342b87a
       size: 716
@@ -27,38 +27,38 @@ stages:
       size: 1111
     outs:
     - path: data/processed/test_SAHeart.csv
-      md5: 1d2109f0688831e713ae59620b6e629e
-      size: 3524
+      md5: ce68ebf9e75c949016dfb7a81423b42d
+      size: 8678
     - path: data/processed/train_SAHeart.csv
-      md5: b73a530816c5d970203b6c52a5041155
-      size: 13815
+      md5: ef1c3defd0075b6a113fc1b990b9d9d8
+      size: 8661
   train_and_evaluate:
     cmd:
     - python src/train_and_evaluate.py --config=params.yaml
     - dvc plots show
     deps:
     - path: data/processed/test_SAHeart.csv
-      md5: 1d2109f0688831e713ae59620b6e629e
-      size: 3524
+      md5: ce68ebf9e75c949016dfb7a81423b42d
+      size: 8678
     - path: data/processed/train_SAHeart.csv
-      md5: b73a530816c5d970203b6c52a5041155
-      size: 13815
+      md5: ef1c3defd0075b6a113fc1b990b9d9d8
+      size: 8661
     - path: src/train_and_evaluate.py
       md5: c38f503ba44638eb7fa45597a0457fe6
       size: 4867
     outs:
     - path: cm.csv
-      md5: 8ba399b5a29edd982fffbcf56b91f163
-      size: 480
+      md5: b01debbde418dc2e100c753dc8a7536b
+      size: 1170
     - path: report/prc.json
-      md5: 6ad21ded24ce128e6ae6b9b626e8bf84
-      size: 289
+      md5: 8a8fc7f159e59030662363a2ca564d32
+      size: 276
     - path: report/roc.json
-      md5: 33808e6108ad7fa772cdfa63ec6d7611
+      md5: 5a025a6f708985c9c987b4c29559f453
       size: 358
     - path: report/scores.json
-      md5: 2b715094edbfabf261c604ce18c9fe28
-      size: 227
+      md5: 941e6980fb901e7d4cbd0b8089fc3edd
+      size: 224
     - path: saved_models/model.joblib
-      md5: df9558447a87d13578007c19c66c7105
+      md5: be1b5116e8ed22e341b900cf9a6b92c6
       size: 854
